@@ -2,19 +2,19 @@ import { motion } from 'motion/react';
 import { Check, Info, Calendar, MessageSquare } from 'lucide-react';
 import { services } from '../data/services';
 import { siteConfig, generateWhatsAppLink } from '../data/siteConfig';
-
+ 
 export default function Services() {
   const handleBookService = (serviceName: string) => {
-    const text = `Hello Nizam, I am interested in booking the "${serviceName}" package for my wedding. Please share your availability.`;
-    window.open(generateWhatsAppLink(text), '_blank');
+    // Send the visitor to the website's Contact page to fill the booking form
+    window.location.href = `/#/contact?service=${encodeURIComponent(serviceName)}`;
   };
-
+ 
   return (
     <section id="services" className="py-24 bg-[#050505] text-[#FAF9F6] relative overflow-hidden">
       {/* Background Ornaments */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-[#D4AF37]/5 rounded-full filter blur-[80px]" />
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#D4AF37]/5 rounded-full filter blur-[80px]" />
-
+ 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         {/* Header */}
@@ -45,7 +45,7 @@ export default function Services() {
             className="h-[1px] bg-[#D4AF37] mx-auto mt-6"
           />
         </div>
-
+ 
         {/* Services Grid */}
         <div className="grid grid-cols-3 gap-2 md:gap-8 mb-20">
           {services.map((service, idx) => (
@@ -64,7 +64,7 @@ export default function Services() {
                   Popular
                 </span>
               )}
-
+ 
               <div>
                 {/* Title */}
                 <h3 className="font-serif text-[10px] sm:text-lg md:text-2xl font-light text-[#FAF9F6] mb-1 md:mb-2 group-hover:text-[#D4AF37] transition-colors duration-300">
@@ -81,14 +81,14 @@ export default function Services() {
                   </div>
                   <span className="text-[6px] sm:text-xs text-[#FAF9F6]/50 font-sans">/ Session</span>
                 </div>
-
+ 
                 <p className="text-[8px] sm:text-xs md:text-sm text-[#FAF9F6]/75 font-sans font-light leading-tight sm:leading-relaxed mb-3 sm:mb-6 md:mb-8 line-clamp-2 md:line-clamp-none">
                   {service.description}
                 </p>
-
+ 
                 {/* Separator */}
                 <div className="h-[1px] bg-[#FAF9F6]/10 w-full mb-3 sm:mb-6 md:mb-8" />
-
+ 
                 {/* Includes list - hidden on small mobile, visible on tablet & desktop */}
                 <ul className="hidden sm:block space-y-2 md:space-y-4 mb-6 md:mb-10">
                   {service.includes.slice(0, 5).map((incl) => (
@@ -103,7 +103,7 @@ export default function Services() {
                   ))}
                 </ul>
               </div>
-
+ 
               {/* Book Button */}
               <button
                 onClick={() => handleBookService(service.name)}
@@ -119,7 +119,7 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
-
+ 
         {/* Premium Information Banner / Guidelines */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -144,7 +144,7 @@ export default function Services() {
                 </p>
               </div>
             </div>
-
+ 
             {/* Travel / Exclusions info details */}
             <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-6 md:border-l md:border-[#FAF9F6]/10 md:pl-8">
               
@@ -156,7 +156,7 @@ export default function Services() {
                   {siteConfig.travelInfo}
                 </p>
               </div>
-
+ 
               <div>
                 <span className="text-xs font-semibold tracking-widest uppercase text-red-400 block mb-2">
                   Not Included
@@ -167,7 +167,7 @@ export default function Services() {
                   ))}
                 </ul>
               </div>
-
+ 
               <div>
                 <span className="text-xs font-semibold tracking-widest uppercase text-[#D4AF37] block mb-2">
                   Service Availability
@@ -176,13 +176,14 @@ export default function Services() {
                   {siteConfig.availableInfo}
                 </p>
               </div>
-
+ 
             </div>
-
+ 
           </div>
         </motion.div>
-
+ 
       </div>
     </section>
   );
 }
+ 

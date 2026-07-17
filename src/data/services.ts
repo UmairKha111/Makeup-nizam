@@ -1,51 +1,116 @@
-import { ServiceItem } from '../types';
+import { ServiceItem } from "../types";
 
 export const services: ServiceItem[] = [
+  // =========================
+  // BRIDAL SERVICES
+  // =========================
   {
-    id: "bride-hd-makeup",
-    name: "Bride HD Makeup",
+    id: "bridal-hd-makeup",
+    name: "Bridal HD Makeup",
     price: 18000,
-    description: "Flawless, camera-ready HD makeup designed specifically to look natural yet stunning in high-definition photography and video. Tailored to your skin type and tone.",
+    description:
+      "Flawless HD bridal makeup designed for weddings and high-definition photography.",
     includes: [
       "Premium HD Bridal Makeup",
-      "Hairstyling & Hair Extensions Styling",
-      "Saree Draping / Lehenga Pleating",
-      "Bridal Accessories & Jewelry Setting",
-      "Waterproof & Sweat-proof Formula",
-      "Premium Mink Eyelashes",
-      "Completing Final Draping and Touch-ups"
+      "Professional Hairstyling",
+      "Saree Draping / Lehenga Setting",
+      "Jewelry Setting",
+      "Waterproof Finish",
+      "Premium Eyelashes",
+      "Final Touch-ups"
     ],
     category: "bridal",
     isPopular: true
   },
+
   {
-    id: "airbrush-makeup",
-    name: "Airbrush Makeup",
+    id: "bridal-airbrush-makeup",
+    name: "Bridal Airbrush Makeup",
     price: 25000,
-    description: "The ultimate luxury bridal experience. Airbrush technique sprays a fine mist of makeup for an ultra-lightweight, flawless second-skin finish with unmatched durability.",
+    description:
+      "Luxury airbrush bridal makeup with a lightweight, flawless finish.",
     includes: [
-      "Premium Airbrush Base & Makeup",
-      "Lightweight, 24-Hour Budge-proof Finish",
-      "Flawless HD Matte or Dewy Complexion",
-      "Hairstyling (Classic/Modern Bridal Styles)",
-      "Saree Draping / Outfit Setting",
-      "Premium HD Eyelashes & Brow Grooming",
-      "Luxury Skin Prep & Priming Session"
+      "Premium Airbrush Makeup",
+      "Luxury Skin Prep",
+      "Professional Hairstyling",
+      "Saree Draping",
+      "Jewelry Setting",
+      "Premium Eyelashes",
+      "24-Hour Long-lasting Finish"
     ],
-    category: "airbrush"
+    category: "bridal"
   },
+
   {
-    id: "groom-makeup-hd",
-    name: "Groom Makeup HD",
-    price: 13000,
-    description: "Subtle, completely natural, matte HD finish styling for the groom. Designed to minimize shine, balance skin tone, and look impeccable under flash photography.",
+    id: "bridal-signature-makeup",
+    name: "Bridal Signature Makeup",
+    price: 30000,
+    description:
+      "Complete premium bridal makeover using luxury international products.",
     includes: [
-      "HD Matte Skin Refining & Correction",
-      "Professional Hair Grooming & Styling",
-      "Subtle Beard & Mustache Detailing",
-      "Under-eye Dark Circle Correction",
-      "Anti-shine, Sweat-proof Sealant",
-      "Natural Lip Hydration & Skin Prep"
+      "Luxury Makeup",
+      "Premium Hairstyling",
+      "Hair Extensions Styling",
+      "Draping",
+      "Jewelry Setting",
+      "Touch-up Kit",
+      "VIP Bridal Assistance"
+    ],
+    category: "bridal"
+  },
+
+  // =========================
+  // GROOM SERVICES
+  // =========================
+  {
+    id: "groom-hd-makeup",
+    name: "Groom HD Makeup",
+    price: 13000,
+    description:
+      "Natural HD grooming and makeup for a fresh, camera-ready look.",
+    includes: [
+      "HD Skin Correction",
+      "Professional Hair Styling",
+      "Beard Grooming",
+      "Dark Circle Concealing",
+      "Waterproof Finish",
+      "Final Touch-ups"
+    ],
+    category: "groom"
+  },
+
+  {
+    id: "groom-airbrush-makeup",
+    name: "Groom Airbrush Makeup",
+    price: 18000,
+    description:
+      "Premium airbrush makeup for a lightweight and long-lasting groom look.",
+    includes: [
+      "Airbrush Makeup",
+      "Luxury Skin Prep",
+      "Hair Styling",
+      "Beard Grooming",
+      "Natural Matte Finish",
+      "Sweat-proof Formula",
+      "Final Touch-ups"
+    ],
+    category: "groom"
+  },
+
+  {
+    id: "groom-signature-makeup",
+    name: "Groom Signature Makeup",
+    price: 22000,
+    description:
+      "Luxury groom makeover with premium products for weddings and events.",
+    includes: [
+      "Premium Makeup",
+      "Hair Styling",
+      "Beard Detailing",
+      "Luxury Skin Prep",
+      "Eyebrow Grooming",
+      "Long-lasting Matte Finish",
+      "Touch-up Session"
     ],
     category: "groom"
   }

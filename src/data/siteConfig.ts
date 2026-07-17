@@ -8,9 +8,9 @@ export const siteConfig: SiteConfig = {
   youtube: "Makeoverbynizam",
   youtubeUrl: "https://www.youtube.com/@Makeoverbynizam",
   contact: {
-    phone: "9074604113",
-    phoneFormatted: "+91 90746 04113",
-    whatsAppNumber: "919074604113",
+    phone: "9995598986",
+    phoneFormatted: "+91919995598986",
+    whatsAppNumber: "919995598986",
   },
   serviceArea: "All India",
   brandDescription: "Makeover By Nizam is a professional makeup artist specializing in HD bridal makeup, Glass Glow Makeup, airbrush makeup, groom makeup, photo arrangements, hair styling and complete wedding transformations — available all across India.",
