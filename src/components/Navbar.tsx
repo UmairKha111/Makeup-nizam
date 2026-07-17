@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, MessageSquare } from 'lucide-react';
 import { siteConfig, generateWhatsAppLink } from '../data/siteConfig';
  
+// Paste your logo image address here
+const LOGO_URL = 'https://i.ibb.co/bRdt3gpw/image.png';
+ 
 // ─── Real brand SVG logos ────────────────────────────────────
  
 function InstagramLogo({ size = 18 }: { size?: number }) {
@@ -124,12 +127,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
  
         {/* ── Logo ── */}
-        <Link to="/" className="flex flex-col items-start group">
-          <span className="font-serif text-xl md:text-2xl tracking-[0.2em] text-[#FAF9F6] group-hover:text-[#D4AF37] transition-colors duration-300">
-            {siteConfig.brandName.toUpperCase()}
+        <Link to="/" className="flex items-center gap-3 group">
+          {/* Monogram mark — white badge so the black logo stays visible on the dark header */}
+          <span className="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 rounded-md bg-[#FAF9F6] flex items-center justify-center overflow-hidden ring-1 ring-[#D4AF37]/30 group-hover:ring-[#D4AF37] transition-all duration-300">
+            <img
+              src={LOGO_URL}
+              alt={`${siteConfig.brandName} logo`}
+              className="w-[85%] h-[85%] object-contain"
+            />
           </span>
-          <span className="text-[9px] tracking-[0.4em] uppercase text-[#D4AF37] font-sans">
-            {siteConfig.category}
+ 
+          <span className="flex flex-col items-start">
+            <span className="font-serif text-xl md:text-2xl tracking-[0.2em] text-[#FAF9F6] group-hover:text-[#D4AF37] transition-colors duration-300">
+              {siteConfig.brandName.toUpperCase()}
+            </span>
+            <span className="text-[9px] tracking-[0.4em] uppercase text-[#D4AF37] font-sans">
+              {siteConfig.category}
+            </span>
           </span>
         </Link>
  
