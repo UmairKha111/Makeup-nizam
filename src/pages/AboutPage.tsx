@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, Star, ShieldCheck, Heart, Award, CheckCircle } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
-
+import traditionalKeralaBride from '../assets/images/ownernizam.png';
 export default function AboutPage() {
   useEffect(() => {
     document.title = "About Nizam | Premium Luxury Makeup Artist";
@@ -70,7 +70,7 @@ export default function AboutPage() {
               className="aspect-[3/4] border border-[#D4AF37]/20 relative overflow-hidden"
             >
               <img
-                src="/src/assets/images/ownernizam.png"
+                  src={traditionalKeralaBride}
                 alt="Kerala traditional wedding look"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"
