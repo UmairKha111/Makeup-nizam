@@ -70,7 +70,7 @@ export default function AboutPage() {
               className="aspect-[3/4] border border-[#D4AF37]/20 relative overflow-hidden"
             >
               <img
-                src="/src/assets/images/traditional_kerala_bride_1783751484791.jpg"
+                src="/src/assets/images/ownernizam.png"
                 alt="Kerala traditional wedding look"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"

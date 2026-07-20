@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Check, Star, Award, Shield } from 'lucide-react';
 import { siteConfig } from '../data/siteConfig';
-import traditionalKeralaBride from '../assets/images/traditional_kerala_bride_1783751484791.jpg';
+import traditionalKeralaBride from '../assets/images/ownernizam.png';
 
 export default function About() {
   const iconMap = [
