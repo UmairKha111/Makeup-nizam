@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
   youtubeUrl: "https://www.youtube.com/@Makeoverbynizam",
   contact: {
     phone: "9995598986",
-    phoneFormatted: "+91919995598986",
+    phoneFormatted: "+919995598986",
     whatsAppNumber: "919995598986",
   },
   serviceArea: "All India",

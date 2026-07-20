@@ -112,13 +112,13 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 items-start"
           >
-            <button
-              onClick={handleBookClick}
-              className="w-full sm:w-auto px-8 py-4 bg-[#D4AF37] hover:bg-[#D4AF37]/90 text-[#050505] font-bold text-xs uppercase tracking-widest transition-all duration-300 hover:shadow-lg hover:shadow-[#D4AF37]/20 flex items-center justify-center gap-2 group"
-            >
-              Book Your Makeup
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+         <button
+  onClick={() => navigate('/contact')}
+  className="w-full sm:w-auto px-8 py-4 bg-[#D4AF37] hover:bg-[#D4AF37]/90 text-[#050505] font-bold text-xs uppercase tracking-widest transition-all duration-300 hover:shadow-lg hover:shadow-[#D4AF37]/20 flex items-center justify-center gap-2 group"
+>
+  Book Your Makeup
+  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+</button>
             <button
               onClick={() => navigate('/gallery')}
               className="w-full sm:w-auto px-8 py-4 bg-transparent border border-[#FAF9F6]/20 hover:border-[#D4AF37] text-[#FAF9F6] hover:text-[#D4AF37] font-bold text-xs uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2"

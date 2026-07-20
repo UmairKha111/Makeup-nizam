@@ -15,12 +15,14 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const servicesMap: { [key: string]: string } = {
-    'bride-hd-makeup': 'Bride HD Makeup (₹18,000)',
-    'airbrush-makeup': 'Airbrush Makeup (₹25,000)',
-    'groom-makeup-hd': 'Groom Makeup HD (₹13,000)',
-    'other-styling': 'Custom Hair & Accessories Styling'
-  };
+ const servicesMap: { [key: string]: string } = {
+  'bridal-hd-makeup': 'Bridal HD Makeup (₹18,000)',
+  'bridal-airbrush-makeup': 'Bridal Airbrush Makeup (₹25,000)',
+  'bridal-signature-makeup': 'Bridal Signature Makeup (₹30,000)',
+  'groom-hd-makeup': 'Groom HD Makeup (₹13,000)',
+  'groom-airbrush-makeup': 'Groom Airbrush Makeup (₹18,000)',
+  'groom-signature-makeup': 'Groom Signature Makeup (₹22,000)',
+};
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -234,19 +236,42 @@ _Sent via Makeover By Nizam Website_`;
                   <label htmlFor="service" className="text-xs uppercase tracking-widest text-[#FAF9F6]/60 mb-2 font-semibold">
                     Desired Package *
                   </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    value={formData.service}
-                    onChange={handleInputChange}
-                    className="bg-[#050505] border border-[#FAF9F6]/10 focus:border-[#D4AF37] text-sm text-[#FAF9F6] px-4 py-3 outline-none transition-colors"
-                  >
-                    <option value="bride-hd-makeup">Bride HD Makeup (₹18,000)</option>
-                    <option value="airbrush-makeup">Airbrush Makeup (₹25,000)</option>
-                    <option value="groom-makeup-hd">Groom Makeup HD (₹13,000)</option>
-                    <option value="other-styling">Custom Hair &amp; Accessories Styling</option>
-                  </select>
+               <select
+  id="service"
+  name="service"
+  required
+  value={formData.service}
+  onChange={handleInputChange}
+  className="bg-[#050505] border border-[#FAF9F6]/10 focus:border-[#D4AF37] text-sm text-[#FAF9F6] px-4 py-3 outline-none transition-colors"
+>
+  <option value="bridal-hd-makeup">
+    Bridal HD Makeup (₹18,000)
+  </option>
+
+  <option value="bridal-airbrush-makeup">
+    Bridal Airbrush Makeup (₹25,000)
+  </option>
+
+  <option value="bridal-signature-makeup">
+    Bridal Signature Makeup (₹30,000)
+  </option>
+
+  <option value="groom-hd-makeup">
+    Groom HD Makeup (₹13,000)
+  </option>
+
+  <option value="groom-airbrush-makeup">
+    Groom Airbrush Makeup (₹18,000)
+  </option>
+
+  <option value="groom-signature-makeup">
+    Groom Signature Makeup (₹22,000)
+  </option>
+
+  <option value="discuss-on-whatsapp">
+    Something other – Discuss on WhatsApp
+  </option>
+</select>
                 </div>
 
                 {/* Message */}
