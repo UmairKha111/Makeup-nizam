@@ -268,6 +268,10 @@ _Sent via Makeover By Nizam Website_`;
     Groom Signature Makeup (₹22,000)
   </option>
 
+  <option value="wedding-reception-package">
+  Wedding + Reception – 2 Makeup (₹16,000)
+</option>
+
   <option value="discuss-on-whatsapp">
     Something other – Discuss on WhatsApp
   </option>
