@@ -1,9 +1,11 @@
 import { ServiceItem } from "../types";
 
 export const services: ServiceItem[] = [
+
   // =========================
   // BRIDAL SERVICES
   // =========================
+
   {
     id: "bridal-hd-makeup",
     name: "Bridal HD Makeup",
@@ -62,6 +64,7 @@ export const services: ServiceItem[] = [
   // =========================
   // GROOM SERVICES
   // =========================
+
   {
     id: "groom-hd-makeup",
     name: "Groom HD Makeup",
@@ -113,5 +116,25 @@ export const services: ServiceItem[] = [
       "Touch-up Session"
     ],
     category: "groom"
+  },
+
+  // =========================
+  // WEDDING + RECEPTION PACKAGE
+  // =========================
+
+  {
+    id: "wedding-reception-package",
+    name: "Wedding + Reception",
+    price: 16000,
+    description:
+      "Special booking package for wedding and reception makeup on the same day.",
+    includes: [
+      "Makeup for 2 People",
+      "Wedding Makeup",
+      "Reception Makeup",
+      "Same-Day Booking"
+    ],
+    category: "groom"
   }
+
 ];
